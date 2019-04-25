@@ -49,7 +49,7 @@ function brightnessSteps (number, getRangeCallback) {
     let step = getStep(brightest, darkest, number);
     //create steps from the greyscale
     let stepified = stepify(greyScale, greyScale, step);
-  // write the steps into the canvas
+  // write the stepified image matrix into the canvas
     ctx.putImageData(stepified, 0, 0);
  
 };
